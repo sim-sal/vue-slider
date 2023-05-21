@@ -1,0 +1,83 @@
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* regole container-generale */
+#general-container{
+    padding: 100px;
+    height: 100vh;
+}
+
+/* regole img-container */
+#img-container{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* regole immagini */
+.item{
+    display: none;
+}
+
+.item > img{
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.active{
+    display: block;
+}
+
+/* regole bottoni */
+#pulsanti{
+    display: flex;
+    justify-content: space-around;
+}
+
+.forward{
+    font-size: 40px;
+    position: absolute;
+    color: white;
+    opacity: 0.5;
+}
+
+.forward:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.back{
+    font-size: 40px;
+    position: absolute;
+    top: 455px;
+    color: white;
+    opacity: 0.5;
+}
+
+.back:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* regole card dettagli img */
+.card-details{
+    width: 400px;
+    position: absolute;
+    top: 400px;
+    right: 280px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.hidden{
+    display: none;
+}
+
