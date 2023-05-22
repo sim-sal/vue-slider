@@ -22,18 +22,31 @@
         <!-- container immagini -->
         <div id="img-container">
             <!-- pulsante giù -->
-            <div class="forward">
+            <div class="forward" @click="downImg">
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
 
+            <!-- div contenente l'immagine -->
+            <div class="item">
+                <img :src="images[activeImg].image" alt="">
+            </div>
+            
+            <!-- div contenente i dettagli dell'immagine -->
+            <div class="card-details">
+                <h3>{{images[activeImg].title}}</h3>
+                <span>{{images[activeImg].text}}</span>
+            </div>
+
             <!-- pulsante su -->
-            <div class="back">
+            <div class="back" @click="upImg">
                 <i class="fa-solid fa-circle-arrow-up"></i>
             </div>
         </div>
 
     </div>
 
+    <!-- vue js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <!-- js -->
     <script src="js/main.js"></script>
